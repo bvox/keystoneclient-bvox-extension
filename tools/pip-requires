@@ -1,0 +1,5 @@
+mox
+unittest2
+setuptools-lint
+pep8
+python-keystoneclient

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -eu
+
+BASEDIR=`dirname $0`/..
+
+virtualenv --setuptools ${BASEDIR}/.venv
+
+if [ -f "${BASEDIR}/tools/pip-requires" ]; then
+    ${BASEDIR}/.venv/bin/pip install -r ${BASEDIR}/tools/pip-requires
+fi
+
+${BASEDIR}/.venv/bin/python ${BASEDIR}/setup.py develop

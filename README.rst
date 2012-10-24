@@ -54,3 +54,11 @@ subcommands::
 
   Optional arguments:
     --by_name            The tenant identifier is treated as a tenant name.
+
+Working with code
+-----------------
+
+See HACKING.rst for guidelines while working with this code. Please *do not
+update HACKING.rst directly*, but edit
+`HACKING.rst Gist<https://gist.github.com/3945275>`_ instead and then
+re-import here.

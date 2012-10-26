@@ -158,26 +158,6 @@ class BvoxExtTests(TestCase):
         self.assertEqual(u.name, 'admin')
         self.assertEqual(u.email, 'admin@example.com')
 
-    def test_get_user_by_email(self):
-        resp = httplib2.Response({
-            "status": 200,
-            "body": json.dumps({
-                'user': self.TEST_USERS['users']['values'][0],
-            })
-        })
-        httplib2.Http.request(urlparse.urljoin(self.TEST_URL,
-                              'v2.0/BVOX/users?email=admin@example.com'),
-                              'GET',
-                              headers=self.TEST_REQUEST_HEADERS) \
-            .AndReturn((resp, resp['body']))
-        self.mox.ReplayAll()
-
-        u = self.client.users.get_by_email('admin@example.com')
-        self.assertTrue(isinstance(u, users.User))
-        self.assertEqual(u.id, 1)
-        self.assertEqual(u.name, 'admin')
-        self.assertEqual(u.email, 'admin@example.com')
-
     def test_get_tenant_by_name(self):
         resp = httplib2.Response({
             "status": 200,

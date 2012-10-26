@@ -3,7 +3,7 @@ BVOX Keystone client extension
 
 BVOX extension for Openstack Keystone client right now just implements
 get_by_name for users tenants. This expects
-`Keystone BVOX extension<https://github.com/bvox/keystone-bvox-extension>`_
+`Keystone BVOX extension <https://github.com/bvox/keystone-bvox-extension>`_
 to be installed on Keystone server.
 
 

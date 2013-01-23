@@ -9,7 +9,7 @@ from setuptools import setup
 
 os.environ['PYLINTRC'] = '.pylintrc'
 
-VERSION = '0.0.1'
+VERSION = '0.1.0'
 GITHUB_URL = 'https://github.com/bvox/keystoneclient-bvox-extension'
 
 
@@ -36,7 +36,7 @@ setup(name='keystoneclient-bvox-ext',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'python-keystoneclient==0.1.3'
+          'python-keystoneclient>=0.2.2'
       ],
       tests_require=(
           'unittest2',

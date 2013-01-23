@@ -1,0 +1,5 @@
+keystoneclient-bvox-ext (0.0.1-1) precise; urgency=low
+
+  * source package automatically created by stdeb 0.6.0+git
+
+ -- Rafael Durán Castañeda <rafael@bvox.net>  Thu, 10 Jan 2013 12:19:17 +0100
